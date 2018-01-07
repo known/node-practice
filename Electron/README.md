@@ -19,4 +19,8 @@ Electron 是一个基于 Chrominum 和 Node.js 的跨平台桌面应用框架。
 >npm install electron -no-proxy --save-dev
 
 # 打包程序
+>npm install electron-packager --save-dev
+>
+>npm install electron-packager -g
+>
 >electron-packager ./Electron --out=dist
