@@ -17,3 +17,6 @@ Electron 是一个基于 Chrominum 和 Node.js 的跨平台桌面应用框架。
 如果你使用了代理，安装过程可能出现connect timeout错误，则需要加-no-proxy
 
 >npm install electron -no-proxy --save-dev
+
+# 打包程序
+>electron-packager ./Electron --out=dist
