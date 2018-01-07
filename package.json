@@ -1,0 +1,22 @@
+{
+  "name": "node-practice",
+  "version": "0.1.0",
+  "description": "This is a my practice application.",
+  "main": "Electron/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/known/node-practice",
+  "keywords": [
+    "node",
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Known",
+  "devDependencies": {
+    "electron": "^1.7.10"
+  }
+}
