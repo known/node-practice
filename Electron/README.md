@@ -10,3 +10,10 @@ Electron 是一个基于 Chrominum 和 Node.js 的跨平台桌面应用框架。
 - 应用崩溃报告 —— 可以将崩溃报告提交到远程服务器
 - 调试和分析 —— Chrominum 的内容模块可以发生性能瓶颈和缓慢的操作。你也可以在应用中使用自己喜欢的 Chrome 开发者工具。
 - Windows installer —— 可以快速便捷地创建安装包。
+
+# 安装 Electron
+>npm install electron --save-dev
+
+如果你使用了代理，安装过程可能出现connect timeout错误，则需要加-no-proxy
+
+>npm install electron -no-proxy --save-dev
