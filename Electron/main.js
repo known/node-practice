@@ -7,6 +7,34 @@ const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 
+//define menu
+const Menu = electron.Menu
+const template = [
+  {
+    label: '系统',
+    submenu: [
+      {
+        label: '百度',
+        click () { require('electron').shell.openExternal('https://www.baidu.com')}
+      },
+      {type: 'separator'},
+      {
+        label: 'Electron',
+        click () { require('electron').shell.openExternal('https://electron.atom.io')}
+      }
+    ]
+  },
+  {
+    label: '帮助',
+    submenu: [
+      {label: '退出',role: 'close'}
+    ]
+  }
+]
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
+//end menu
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
